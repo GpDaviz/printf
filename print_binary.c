@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_binary - Prints an integer in binary format.
@@ -15,29 +14,29 @@ int print_binary(int num)
 	int i; /* Move the declaration here */
 
 	if (num == 0)
-    {
-        _putchar('0');
-        return 1;
-    }
+	{
+		_putchar('0');
+		return (1);
+	}
 
-    if (num < 0)
-    {
-        _putchar('-');
-        count++;
-        num = -num;
-    }
+	if (num < 0)
+	{
+		_putchar('-');
+		count++;
+		num = -num;
+	}
 
-    while (num > 0)
-    {
-        binary[index++] = num % 2;
-        num /= 2;
-    }
+	while (num > 0)
+	{
+		binary[index++] = num % 2;
+		num /= 2;
+	}
 
-    for (i = index - 1; i >= 0; i--) /* Use 'i' in the loop */
-    {
-        _putchar(binary[i] + '0');
-        count++;
-    }
+	for (i = index - 1; i >= 0; i--) /* Use 'i' in the loop */
+	{
+		_putchar(binary[i] + '0');
+		count++;
+	}
 
-    return count;
+	return (count);
 }

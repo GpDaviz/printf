@@ -8,17 +8,17 @@
  */
 int print_string(char *str)
 {
-    int count = 0;
+	int count = 0;
 
-    if (str == NULL)
-        str = "(null)";
+	if (str == NULL)
+		str = "";
 
-    while (*str)
-    {
-        _putchar(*str);
-        str++;
-        count++;
-    }
+	while (*str)
+	{
+		_putchar(*str);
+		str++;
+		count++;
+	}
 
-    return count;
+	return (count);
 }
