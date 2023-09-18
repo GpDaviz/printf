@@ -6,7 +6,7 @@
  * @i: List of arguments to be printed.
  *
  *
- * Return: size.
+ * Return: Precious.
  */
 int get_size(const char *format, int *i)
 {
