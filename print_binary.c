@@ -9,12 +9,12 @@
  */
 int print_binary(int num)
 {
-    int count = 0;
-    int binary[32];  /* Assuming 32-bit integers */
-    int index = 0;
-    int i; /* Move the declaration here */
+	int count = 0;
+	int binary[32];  /* Assuming 32-bit integers */
+	int index = 0;
+	int i; /* Move the declaration here */
 
-    if (num == 0)
+	if (num == 0)
     {
         _putchar('0');
         return 1;
