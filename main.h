@@ -30,7 +30,6 @@ struct fmt
 	int (*fn)(va_list, char[], int, int, int, int);
 };
 
-int _putchar(char c);
 
 /**
  * typedef struct fmt fmt_t - Struct op
